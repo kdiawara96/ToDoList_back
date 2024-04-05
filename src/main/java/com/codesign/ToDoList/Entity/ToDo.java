@@ -5,11 +5,14 @@ import java.time.LocalDateTime;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
 
+import com.codesign.ToDoList.Enums.Etats;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -35,6 +38,19 @@ public class ToDo {
        @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "designation", nullable = true, length = 50, unique = false)
+    private String designation;
+
+    @Column(name = "content", nullable = true, unique = false)
+    private String content;
+
+    @Column(name = "photo", nullable = true)
+    private String photo;
+
+    @Column(name = "etat")
+    @Enumerated(EnumType.ORDINAL)
+    private Etats etat = Etats.A_FAIRE;
 
     @Column(name = "comlpleted")
     private Boolean comlpleted = Boolean.FALSE;

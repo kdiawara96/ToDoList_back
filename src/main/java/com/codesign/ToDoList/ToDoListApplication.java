@@ -77,8 +77,8 @@ public class ToDoListApplication implements CommandLineRunner{
 
 		if (usEmail == null && usUsername == null) {
 	   
-			user.setNom("pay");
-			user.setPrenom("mal");
+			user.setNom("TODO");
+			user.setPrenom("Do");
 			user.setUsername(username);
 			user.setEmail(email);
 			user.setPassword(passwordEncoder.encode("todo@2024"));

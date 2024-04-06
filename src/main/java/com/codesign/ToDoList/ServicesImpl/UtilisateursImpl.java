@@ -59,6 +59,11 @@ public class UtilisateursImpl implements UtilisateursServices{
 
     }
 
+    @Override
+    public Utilisateurs findByEmail(String email) {
+       return repo.findByEmail(email);
+    }
+
     
     
 }

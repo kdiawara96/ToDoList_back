@@ -6,5 +6,6 @@ public interface UtilisateursServices {
     
     Utilisateurs save(Utilisateurs utilisateurs);
     Utilisateurs update(Utilisateurs utilisateurs);
+    Utilisateurs findByEmail(String email);
 
 }

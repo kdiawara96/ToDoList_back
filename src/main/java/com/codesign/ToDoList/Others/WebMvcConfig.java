@@ -49,11 +49,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
             //UTILISATEURS
             resourceNames.put("utilisateurs/changeProfil", "ffdhhhfhfjhfhhhfddddffhhfdfhghhhrhrrhhrhhfgfd");
             resourceNames.put("utilisateurs/updateDroitsForUser", "iojdojosjdoidjdjodkjdijfoifdjofdkcsksjksnsndddsdsddd");
-         
-
-           
         }
-    
        
         @Override
         public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

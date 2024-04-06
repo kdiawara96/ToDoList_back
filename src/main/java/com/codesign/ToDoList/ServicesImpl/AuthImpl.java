@@ -26,6 +26,7 @@ import org.springframework.stereotype.Service;
 import com.codesign.ToDoList.Entity.Utilisateurs;
 import com.codesign.ToDoList.Repository.UtilisateursRepo;
 import com.codesign.ToDoList.Services.AuthServices;
+import com.codesign.ToDoList.models.UsersModel;
 
 
 

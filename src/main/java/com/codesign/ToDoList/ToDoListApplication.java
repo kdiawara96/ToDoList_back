@@ -7,7 +7,9 @@ import java.util.Set;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -15,10 +17,13 @@ import com.codesign.ToDoList.Entity.Roles;
 import com.codesign.ToDoList.Entity.Utilisateurs;
 import com.codesign.ToDoList.Repository.RolesRepo;
 import com.codesign.ToDoList.Repository.UtilisateursRepo;
+import com.codesign.ToDoList.Security.RsakeysConfig;
 
 import lombok.RequiredArgsConstructor;
 
 @SpringBootApplication
+@EnableConfigurationProperties(RsakeysConfig.class)
+@EnableMethodSecurity(prePostEnabled = true)
 @RequiredArgsConstructor
 public class ToDoListApplication implements CommandLineRunner{
 

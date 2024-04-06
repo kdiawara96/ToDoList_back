@@ -47,8 +47,17 @@ public class WebMvcConfig implements WebMvcConfigurer {
         //4
         public ResourceNameHandlerInterceptor() {
             //UTILISATEURS
-            resourceNames.put("utilisateurs/changeProfil", "ffdhhhfhfjhfhhhfddddffhhfdfhghhhrhrrhhrhhfgfd");
-            resourceNames.put("utilisateurs/updateDroitsForUser", "iojdojosjdoidjdjodkjdijfoifdjofdkcsksjksnsndddsdsddd");
+            resourceNames.put("utilisateur/save", "kfpvkfdpofkdkpofkpfdkpokàofkpdoikofdkfdpfdkfkfdd");
+            resourceNames.put("utilisateur/update", "dldsdsnodsnjsoijdsosjinodssjsiojsosjdsdodsjoidsss");
+            //TODO
+            resourceNames.put("todolist/save", "kjkkdidhduhdidhishsdjjddkjjdjjdjjdjjsjjjjjjjjdsjjddjjsjjdsjjjisidsissoisssss");
+            resourceNames.put("todolist/update", "dksidjoidjdoijdodijdojdqojqidushduisudiuissisuusuusiuisiusssis");
+            resourceNames.put("todolist/changerEtat_AFAIRE", "kdjdiojifdojddjudiisiddsdsddsfiofdjifdosjfojfiofsjofjfdofdjffiofdf");
+            resourceNames.put("todolist/changerEtatEncours", "oijdodjoijdoisjdijsdsidssdojidsojsdoisjidjdodsjsosdsjsiojsijsij");
+            resourceNames.put("todolist/changerEtatTerminer", "jdijdiojoidjoidjoisjdsisdoisdsjoisijddijsijdijoisdsds");
+            resourceNames.put("todolist/findAllByEtatAndUtilisateurs_A_Faire", "idjifjdfoijfdfdoijfdodfsjoqfjoifdsjffofdjfoifdifjjioifd");
+            resourceNames.put("todolist/findAllByEtatAndUtilisateurs_EN_Cours", "iuiuokoiiiiiiiiiiioioioiioudiudiuiudddiudiuudiuiudididdi");
+            resourceNames.put("todolist/findAllByEtatAndUtilisateurs_TERMINER", "dijfoijfdiojfdosjiffjoifijfjfiifosjdoiiffjiioffijofiofodiofijfoifd");
         }
        
         @Override
